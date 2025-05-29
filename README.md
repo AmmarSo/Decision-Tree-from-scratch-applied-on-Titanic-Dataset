@@ -2,7 +2,7 @@
 This project demonstrates how to implement a Decision Tree classifier from scratch using the famous Titanic dataset.
 It is designed for beginners who want to understand the core logic behind one of the most interpretable machine learning algorithms — without using any ML libraries like scikit-learn.
 
-## 🧾 Full Explanation on Medium: coming soon
+## 🧾 Full Explanation on Medium: [Build a Decision Tree from Scratch on the Titanic Dataset — No scikit-learn](https://medium.com/@ammar.souchon/build-a-decision-tree-from-scratch-on-the-titanic-dataset-no-scikit-learn-96721af5127e)
 
 ## 📊 Dataset
 - Name: Titanic - Machine Learning from Disaster
