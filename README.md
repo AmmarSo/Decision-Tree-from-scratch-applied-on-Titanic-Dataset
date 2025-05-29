@@ -1,35 +1,53 @@
-🌳 Titanic Survivors Classification using Decision Tree (From Scratch)
-This project shows how to implement a Decision Tree classifier from scratch using Python, trained on the Titanic dataset.
-It’s ideal for learners who want to deeply understand how decision trees actually work — without using any machine learning libraries like scikit-learn.
+# 🌳 Titanic Survivors Classification using Decision Tree (from Scratch)
+This project demonstrates how to implement a Decision Tree classifier from scratch using the famous Titanic dataset.
+It is designed for beginners who want to understand the core logic behind one of the most interpretable machine learning algorithms — without using any ML libraries like scikit-learn.
 
-✍️ Full Explanation on Medium: Soon to be published
+## 🧾 Full Explanation on Medium: coming soon
 
-📊 Dataset
-Name: Titanic Dataset
-Source: Kaggle (https://www.kaggle.com/c/titanic)
-Samples: 891 passengers
-Features Used (after preprocessing):
+## 📊 Dataset
+- Name: Titanic - Machine Learning from Disaster
 
-Pclass (Passenger Class)
+- Source: Kaggle Titanic Competition
 
-Sex (converted to binary)
+- Samples: 891 passengers (training set)
 
-Age (numerical, filled with median)
+- Features (after preprocessing):
 
-Target:
+- Pclass (Passenger Class)
 
-Survived → 1 if survived, 0 otherwise
+- Sex (converted to binary: 0 = male, 1 = female)
 
-📁 Files
-DecisionTree.py → Full implementation of the Decision Tree from scratch
+- Age (numerical, with missing values filled using the median)
 
-Node.py → Class representing each tree node (leaf or decision node)
+- Survived (0 = No, 1 = Yes)
 
-main.py → Loads Titanic dataset, preprocesses it, trains the model, and displays results
+## 📁 Files
+- DecisionTree.py – contains the full tree-building implementation
 
-titanic.csv → Sample Titanic data
+- Node.py – defines the tree’s structure (leaf and decision nodes)
 
-tree.png → Final tree visualization generated manually
+- main.py – runs the training, evaluation, and displays the decision tree
 
-README.md → You’re reading it!
+- titanic.csv – the dataset used for training
 
+- README.md – this file
+
+##🧠 Why from Scratch?
+Building machine learning models from scratch helps you understand what’s happening under the hood:
+
+How a tree selects the best splits
+
+How Gini impurity works
+
+How recursive tree construction operates
+
+How predictions are made by traversing the tree
+
+Once you understand that, using tools like scikit-learn becomes much more meaningful.
+
+✅ Requirements
+Python 3.x
+
+pandas
+
+(Optional) matplotlib or graphviz for visualization
