@@ -30,24 +30,23 @@ It is designed for beginners who want to understand the core logic behind one of
 
 - titanic.csv – the dataset used for training
 
-- README.md – this file
+- README.md 
 
-##🧠 Why from Scratch?
+## 🧠 Why from Scratch?
 Building machine learning models from scratch helps you understand what’s happening under the hood:
 
-How a tree selects the best splits
+- How a tree selects the best splits
 
-How Gini impurity works
+- How Gini impurity works
 
-How recursive tree construction operates
+- How recursive tree construction operates
 
-How predictions are made by traversing the tree
+- How predictions are made by traversing the tree
 
-Once you understand that, using tools like scikit-learn becomes much more meaningful.
+- Once you understand that, using tools like scikit-learn becomes much more meaningful.
 
 ✅ Requirements
-Python 3.x
-
-pandas
+- Python 3.x
+- pandas
 
 (Optional) matplotlib or graphviz for visualization
