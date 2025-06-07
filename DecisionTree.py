@@ -1,7 +1,9 @@
+# import librairies
 from Node import Node
 
 class DecisionTree:
 
+    # Definition des attributs (init)
     def __init__(self, root=None, max_depth=None,  min_samples_split=None, criterion=None, n_classes=None):
         self.root = root
         self.max_depth = max_depth
@@ -156,3 +158,31 @@ class DecisionTree:
             print(f"{indent}Feature {node.feature_index} <= {node.threshold}?")
             self.print_tree(node.left, depth + 1)
             self.print_tree(node.right, depth + 1)
+    
+    def export_to_dot(self, filename="tree.dot"):
+        with open(filename, "w") as f:
+            f.write("digraph Tree {\n")
+            self._write_dot(self.root, f)
+            f.write("}\n")
+
+    def _write_dot(self, node, f, node_id=0, counter=[0]):
+        current_id = node_id
+
+        if node.is_leaf:
+            label = f"Predict: {node.prediction}\nSamples: {node.samples_count}"
+        else:
+            label = f"X[{node.feature_index}] <= {node.threshold}\nSamples: {node.samples_count}"
+
+        f.write(f'  {current_id} [label="{label}"];\n')
+
+        if not node.is_leaf:
+            counter[0] += 1
+            left_id = counter[0]
+            self._write_dot(node.left, f, left_id, counter)
+            f.write(f"  {current_id} -> {left_id} [label=\"True\"];\n")
+
+            counter[0] += 1
+            right_id = counter[0]
+            self._write_dot(node.right, f, right_id, counter)
+            f.write(f"  {current_id} -> {right_id} [label=\"False\"];\n")
+

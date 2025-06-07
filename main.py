@@ -48,3 +48,5 @@ if __name__ == "__main__":
     # Step 5: Print the tree
     print("\nDecision Tree:")
     tree.print_tree()
+    tree.export_to_dot("tree.dot")
+

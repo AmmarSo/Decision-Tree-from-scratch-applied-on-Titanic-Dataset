@@ -1,0 +1,46 @@
+digraph Tree {
+  0 [label="X[1] <= 0
+Samples: 714"];
+  1 [label="X[2] <= 6.0
+Samples: 453"];
+  2 [label="X[0] <= 2
+Samples: 24"];
+  3 [label="Predict: 1
+Samples: 10"];
+  2 -> 3 [label="True"];
+  4 [label="Predict: 0
+Samples: 14"];
+  2 -> 4 [label="False"];
+  1 -> 2 [label="True"];
+  5 [label="X[0] <= 1
+Samples: 429"];
+  6 [label="Predict: 0
+Samples: 99"];
+  5 -> 6 [label="True"];
+  7 [label="Predict: 0
+Samples: 330"];
+  5 -> 7 [label="False"];
+  1 -> 5 [label="False"];
+  0 -> 1 [label="True"];
+  8 [label="X[0] <= 2
+Samples: 261"];
+  9 [label="X[2] <= 2.0
+Samples: 159"];
+  10 [label="Predict: 0
+Samples: 2"];
+  9 -> 10 [label="True"];
+  11 [label="Predict: 1
+Samples: 157"];
+  9 -> 11 [label="False"];
+  8 -> 9 [label="True"];
+  12 [label="X[2] <= 38.0
+Samples: 102"];
+  13 [label="Predict: 1
+Samples: 90"];
+  12 -> 13 [label="True"];
+  14 [label="Predict: 0
+Samples: 12"];
+  12 -> 14 [label="False"];
+  8 -> 12 [label="False"];
+  0 -> 8 [label="False"];
+}
